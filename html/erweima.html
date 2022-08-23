@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐藏菜单</title>
+    <style>
+        html,body,.wrap{
+            height: 100%;
+        }
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            width: 80%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1 style="color: red;">恭喜你发现隐藏彩蛋</h1>
+        <img src="../images/erweima.jpg" alt="">
+        <span style="margin: 1rem 0; color: red;">获取一个截图扫码向我发红包机会</span>
+    </div>
+</body>
+<script>
+    var wrap = document.querySelector('.wrap');
+    wrap.addEventListener('click',function(){
+        window.history.back(-1); 
+    })
+
+</script>
+</html>

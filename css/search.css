@@ -1,0 +1,194 @@
+/* 初始化的css代码 */
+
+
+body *{
+	user-select: none;	/* 禁止ios和android用户选中文字 */
+	-webkit-touch-callout: none;	/* 禁止ios长按时触发系统的菜单，禁止ios&android长按时下载图片 */
+	-webkit-text-size-adjust: 100%;	/* 禁止横竖屏旋转后文字放大 */
+
+	/* 取自网易严选的默认字体 */
+	font-family: PingFangSC-Light,helvetica,Heiti SC;	
+}
+a,button,input{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);	/* 去除android下a/button/input标签被点击时产生的边框 & 去除ios下a标签被点击时产生的半透明灰色背景 */
+}
+button,input{
+	-webkit-appearance: none;	/* ios下button与input都会有个默认背景 */
+	border-radius: 0;	/* ios下input有个默认圆角 */
+}
+
+/* 根节点下定义一个变量 */
+:root{
+	--c1:#dd1a21;
+}
+body{
+	margin: 0;
+	font-size: 12px;
+	background-color: #eee;
+	color: #333;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+input {
+	outline: none;
+	vertical-align: middle;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	vertical-align: middle;
+}
+h1,h2,h3,h4,p{
+	margin: 0;
+}
+html{
+	font-size: 26.666666666666666vw;
+}
+
+/* 使用字体图标 */
+@font-face {
+	font-family: 'iconfont';
+	src: url('../fonts/iconfont.eot');
+	src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2') format('woff2'),
+		url('../fonts/iconfont.woff') format('woff'),
+		url('../fonts/iconfont.ttf') format('truetype'),
+		url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+#wrap{
+    background: #fff;
+}
+#wrap .header{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 2.27rem;
+}
+#wrap .header .head{
+    box-sizing: border-box;
+    padding: 0 0.15rem;
+    width: 3.75rem;
+    height: 0.44rem;
+
+    display: flex;
+    align-items: center;
+}
+.header .head .searchWrap{
+    display: flex;
+    border-radius: .05rem;
+    background:rgba(244, 244, 244); 
+    height: 0.28rem;
+    align-items: center;
+}
+#wrap .header .searchWrap:before{
+    content: " ";
+    width: .14rem;
+    height: .14rem;
+    margin-left: .08rem;
+    background-image: url(../images/search.png);
+    background-size: .14rem .14rem;
+}
+#wrap .header .search{
+    box-sizing: border-box;
+    align-items: center;
+    width: 2.8rem;
+    height: 0.28rem;
+    padding: 0 .1rem;
+    background:rgba(244, 244, 244); 
+    font-size: .14rem;
+    color: rgba(0, 0, 0, .3);
+    border: none;
+}
+
+#wrap .header .search span{
+    font-size: .14rem;
+    margin-right: .1rem;
+}   
+#wrap .header .head p{
+    font-size: 0.14rem;
+    margin-left: 0.08rem;
+    
+}
+
+/* 热门搜索 */
+.hotSearch{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 1.83rem;
+    padding: 0 .15rem .15rem .15rem;
+    margin-bottom: .1rem;
+}
+.hotSearch p{
+    color: #999;
+    font-size: .14rem;
+    margin-top: .15rem;
+}
+.hotSearch .navList{
+    margin-top: .15rem;
+}
+.hotSearch .navList li {
+    float: left;
+
+    padding: 0 .08rem;
+    margin-right: .16rem;
+    margin-bottom: .16rem;
+    line-height: .23rem;
+
+    border: 1px solid #999;
+    border-radius: 4px;
+    color: #333;
+    font-size: .12rem;
+}
+.hotSearch .navList li.active{
+    border: 1px solid var(--c1);
+    color: var(--c1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shadow{
+    width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .5);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: -1;
+
+	display: none;
+
+}

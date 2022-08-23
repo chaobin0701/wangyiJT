@@ -1,0 +1,191 @@
+.header{
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 .12rem;
+    height: .5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+.header .iconfont{
+    font-size: .20rem;
+}
+.header .iconfont:nth-child(2){
+    font-size: .22rem;
+    margin-left: .15rem;
+}
+.header p{
+    margin-left: .2rem;
+    font-size: .18rem ;
+}
+
+/* content 内容区域 */
+.content .nav{
+    position: relative;
+    width: 3.75rem;
+    height: 2.7rem;
+    padding-top: .725rem;
+}
+.content .nav .background{
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+
+}
+.content .nav .background img:nth-child(1){
+    position: absolute;
+    width: .65rem;
+    top: .3rem;
+    left: .06rem;
+    z-index: 2;
+}
+.content .nav .background p{
+    position: absolute;
+    height: .22rem;
+    line-height: .22rem;
+    font-size: .15rem;
+    left: .73rem;
+    top: .4rem;
+    color: #fff;
+}
+.content .nav .background img:nth-child(3){
+    width: 3.75rem;
+}
+
+    /* 列表区域 */
+.content .nav .list-wrappers{
+    box-sizing: border-box;
+    margin: 0 .1rem;
+
+}
+
+.content .nav .list{
+
+    background: #fff;
+    border-radius: .16rem;
+    height: 2.7rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;   
+}
+.content .nav .list li{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .nav li img{
+    width: .6rem;
+    height: .6rem;
+}
+.content .nav li span{
+    font-size: .14rem;
+    color: rgb(51, 51, 51);
+}
+.content .nav li p{
+    font-size: .12rem;
+    color: rgb(153, 153, 153);
+}
+
+/* 瀑布流区域 */
+.m-wrappers{
+    display: flex;
+    justify-content: space-around;
+    margin-top: .15rem;
+}
+.m-wrappers .m-lookColumn{
+    width: 1.725rem;
+    box-sizing: border-box;
+}
+.m-lookColumn .m-innerWrapper{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: .2rem;
+    border-radius: .16rem;
+    background-color: #fff;
+}
+.m-lookColumn .m-innerWrapper img{
+    border-radius: .16rem  .16rem 0  0;
+}
+.m-lookColumn .m-innerWrapper .title{
+    display: -webkit-box;
+    padding: .09rem  .08rem 0;
+    color: #333;
+    font-size: .14rem;
+    line-height: .2rem;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-align: left;
+    /* 限制两行 且 超出部分用...替代 */
+    -webkit-line-clamp:2; 
+    -webkit-box-orient:vertical; 
+    white-space:normal;
+}
+.m-innerWrapper .m-lookDetail{
+    display: flex;
+    box-sizing: border-box;
+    padding: .085rem .08rem .12rem;
+    justify-content: space-between;
+}
+/* 用户左边区域 */
+.m-lookDetail .m-userInfo{
+    display: flex;
+    align-items: center;
+}
+.m-lookDetail .m-userInfo img{
+    width: .24rem;
+    height: .24rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.05rem;
+}
+.m-lookDetail .m-userInfo .name{
+    font-size: .11rem;
+    color: #7f7f7f;
+}
+.m-lookDetail .m-upArea{
+    display: flex;
+}
+/* 用户右边区域 */
+.m-lookDetail .m-upArea{
+    display: flex;
+    align-items: center;
+}
+.m-lookDetail .m-upArea img{
+    width: .16rem;
+    height: .16rem;
+}
+.m-lookDetail .m-upArea .watch{
+    font-size: .11rem;
+    color: #7f7f7f;
+}
+
+/* 底层导航栏 */
+.footerNav{
+	width: 100vw;
+	height: .5rem;
+	box-sizing: border-box;
+	background: #fff;
+	border-top: 1px solid #d9d9d9;
+	position: fixed;
+	bottom: 0;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.footerNav a{
+	text-align: center;
+}
+.footerNav a span{
+	display: block;
+	font-size: .12rem;
+}
+.footerNav a span.iconfont{
+	font-size: .18rem;
+}
+.footerNav a.active{
+	color: var(--c1);
+}

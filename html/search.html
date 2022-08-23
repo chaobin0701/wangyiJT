@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>搜索</title>
+    <link rel="stylesheet" href="../css/search.css">
+</head>
+<body>
+
+    <div id="wrap">
+        <!-- 搜索区域 -->
+        <div class="header">
+            <div class="head">
+                <div class="searchWrap">
+                    <input class="search" placeholder="三同好物"></input>
+                </div>
+                <p>取消</p>
+            </div>
+           
+
+        <!-- 热门搜索 -->
+        <div class="hotSearch">
+            <p>热门搜索</p>
+            <ul class="navList">
+                <li class="active">中秋节</li>
+                <li class="active">咖啡</li>
+                <li>iphone12</li>
+                <li>枕头</li>
+                <li>湿巾</li>
+                <li>口罩</li>
+                <li>袜子</li>
+                <li>四件套</li>
+                <li>纸</li>
+                <li>茶</li>
+                <li>锅</li>
+                <li>纸巾</li>
+            </ul>
+      </div>
+        </div>
+
+    
+          <!-- shadow --> 
+          <div class="shadow">
+            
+        </div>  
+    </div>
+  
+    <script>
+        var btn = document.querySelector('.header .head p');
+    
+        btn.addEventListener('click',function(){
+            window.history.back(-1); 
+        })</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+html,body,#wrap{
+    height: 100%;
+}
+#wrap{
+    position: relative;
+}
+/* header */
+.header{
+    height: 0.46rem;
+    box-sizing: border-box;
+    padding: 0 .15rem;
+    text-align: center;
+    display: flex;
+    background-color: #fff;
+    line-height: .22rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+.header h1{
+    font-size: .18rem;
+    font-weight: unset;
+}
+.header span{
+    position: relative;
+    font-size: .10rem;   
+    width: .37rem;
+    height: .2rem;
+    color: #fff;
+    background-color: #FC625F;
+}
+.header span::before{
+    position: absolute;
+    width: .08rem;
+    height: .08rem;
+    top: 50%;
+    left: -.04rem;
+    margin-top: -.04rem;
+    border-radius: .08rem;
+    background-color: #FFF;
+    content: '';
+}
+.header span::after{
+    right: -.04rem;
+    position: absolute;
+    width: .08rem;
+    height: .08rem;
+    top: 50%;
+    margin-top: -.04rem;
+    border-radius: .08rem;
+    background-color: #FFF;
+    content: '';
+}
+    /* m-header */
+.m-header{
+    display: flex;
+    height: .4rem;
+    justify-content: space-between;
+    padding: 0 .165rem;
+    background-color: rgb(238, 238, 238);
+}
+.m-header div{
+    display: flex;
+    align-items: center;
+
+}
+.m-header div  i{
+    display: block;
+    width:  .05rem;
+    height: .05rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    margin-right: .02rem;
+}
+.m-header div span{
+    font-size: .12rem;
+    color: #666;
+}
+
+/* content */
+.content{
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    width: 3.75rem;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content img{
+    width: 1.37rem;
+    height: 1.37rem;
+
+}
+.content span{
+    font-size: .14rem;
+    color: #7f7f7f;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 底层导航栏 */
+.footerNav{
+	width: 100vw;
+	height: .5rem;
+	box-sizing: border-box;
+	background: #fff;
+	border-top: 1px solid #d9d9d9;
+	position: fixed;
+	bottom: 0;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.footerNav a{
+	text-align: center;
+}
+.footerNav a span{
+	display: block;
+	font-size: .12rem;
+}
+.footerNav a span.iconfont{
+	font-size: .18rem;
+}
+.footerNav a.active{
+	color: var(--c1);
+}
